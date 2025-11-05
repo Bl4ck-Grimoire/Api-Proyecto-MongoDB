@@ -23,7 +23,7 @@ async def lifespan(app: FastAPI):
 # Se añade metadata que se usará en la documentación automática de la API
 app = FastAPI(
     title=settings.APP_NAME,
-    description="Una API para gestionar pacientes y sus contactos de emergencia.",
+    description="Una API para gestionar eventos",
     version=settings.APP_VERSION,
     lifespan=lifespan,
 )
