@@ -7,5 +7,3 @@ class OrganizacionExterna(BaseModel):
     asiste_representante_legal: str
     nombre_representante_legal: str
     nombre_representante_alterno: str
-
-    #ola uwu
