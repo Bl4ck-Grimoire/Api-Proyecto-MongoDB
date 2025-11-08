@@ -15,7 +15,7 @@ class EventoBase(BaseModel):
     hora_inicio: str
     hora_fin: str
     estado_evento: str
-    orgaznizado_por: str
+    organizado_por: str
     tipo_aval: str
     lugares_evento: Optional[List[lugaresEvento]] = []
     organizaciones_externas: Optional[List[OrganizacionExterna]] = []
@@ -32,7 +32,7 @@ class CrearEvento(BaseModel):
     hora_inicio: str
     hora_fin: str
     estado_evento: str
-    orgaznizado_por: str
+    organizado_por: str
     tipo_aval: str
     lugares_evento: Optional[List[lugaresEvento]] = []
     organizaciones_externas: Optional[List[OrganizacionExterna]] = []
@@ -49,7 +49,7 @@ class ActualizarEvento(BaseModel):
     hora_inicio: Optional[str] = None
     hora_fin: Optional[str] = None
     estado_evento: Optional[str] = None
-    orgaznizado_por: Optional[str] = None
+    organizado_por: Optional[str] = None
     tipo_aval: Optional[str] = None
     lugares_evento: Optional[List[lugaresEvento]] = None
     organizaciones_externas: Optional[List[OrganizacionExterna]] = None

@@ -14,7 +14,7 @@ class EventoModel(Document):
     hora_inicio: str
     hora_fin: str
     estado_evento: str
-    orgaznizado_por: str
+    organizado_por: str
     tipo_aval: str
     lugares_evento: Optional[List[lugaresEvento]] = []
     organizaciones_externas: Optional[List[OrganizacionExterna]] = []
