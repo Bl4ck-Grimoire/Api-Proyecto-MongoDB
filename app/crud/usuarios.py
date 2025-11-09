@@ -3,10 +3,19 @@ from beanie import PydanticObjectId
 from app.models.usuarios import UsuarioModel
 from app.schemas.usuarios import UsuarioBase, CrearUsuario, ActualizarUsuario, Usuario
 
-async def crear_usuario(nuevo_usuario: UsuarioModel) -> Usuario:
+async def crear_usuario(nuevo_usuario: CrearUsuario) -> Usuario:
     usuario = UsuarioModel(**nuevo_usuario.model_dump())
     await usuario.insert()
-    return Usuario(id=str(usuario.id), **nuevo_usuario.model_dump())
+    return Usuario(
+        id=str(usuario.id),
+        nombre=usuario.nombre,
+        apellido=usuario.apellido,
+        correo=usuario.correo,
+        rol=usuario.rol,
+        id_facultad=str(usuario.id_facultad) if usuario.id_facultad else None,
+        id_unidad_academica=str(usuario.id_unidad_academica) if usuario.id_unidad_academica else None,
+        id_programa_academico=str(usuario.id_programa_academico) if usuario.id_programa_academico else None
+    )
 
 async def actualizar_usuario(usuario_id: PydanticObjectId, usuario_actualizado: ActualizarUsuario) -> Usuario:
     try:
@@ -32,9 +41,9 @@ async def actualizar_usuario(usuario_id: PydanticObjectId, usuario_actualizado: 
         apellido=usuario.apellido,
         correo=usuario.correo,
         rol=usuario.rol,
-        id_facultad=usuario.id_facultad or None,
-        id_unidad_academica=usuario.id_unidad_academica or None,
-        id_programa_academico=usuario.id_programa_academico or None
+        id_facultad=str(usuario.id_facultad) if usuario.id_facultad else None,
+        id_unidad_academica=str(usuario.id_unidad_academica) if usuario.id_unidad_academica else None,
+        id_programa_academico=str(usuario.id_programa_academico) if usuario.id_programa_academico else None
         )
 
 async def obtener_usuario_por_id(usuario_id: PydanticObjectId) -> Usuario:
@@ -57,9 +66,9 @@ async def obtener_usuario_por_id(usuario_id: PydanticObjectId) -> Usuario:
         apellido=usuario.apellido,
         correo=usuario.correo,
         rol=usuario.rol,
-        id_facultad=usuario.id_facultad or None,
-        id_unidad_academica=usuario.id_unidad_academica or None,
-        id_programa_academico=usuario.id_programa_academico or None
+        id_facultad=str(usuario.id_facultad) if usuario.id_facultad else None,
+        id_unidad_academica=str(usuario.id_unidad_academica) if usuario.id_unidad_academica else None,
+        id_programa_academico=str(usuario.id_programa_academico) if usuario.id_programa_academico else None
         )
 
 async def obtener_usuarios() -> list[Usuario]:
