@@ -39,3 +39,19 @@ async def obtener_evento_por_id(evento_id: PydanticObjectId) -> Evento:
         usuarios_organizadores=evento.usuarios_organizadores,
         evento_aval_url=evento.evento_aval_url
         )
+
+async def eliminar_evento(evento_id: PydanticObjectId) -> None:
+    try:
+        object_id = PydanticObjectId(evento_id)
+    except Exception:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, 
+            detail=f"El ID {evento_id} no es válido"
+            )
+    evento = await EventoModel.get(object_id)
+    if not evento:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, 
+            detail=f"No se encontró el evento con ID {evento_id}"
+            )
+    await evento.delete()
