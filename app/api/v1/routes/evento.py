@@ -9,6 +9,11 @@ router = APIRouter()
 async def crearEvento(evento: CrearEvento):
     return await crud.crear_evento(evento)
 
+@router.put("/{evento_id}", response_model=Evento, status_code=status.HTTP_200_OK)
+async def actualizarEvento(
+    evento_id: str = Path(..., description="ID del evento a actualizar"), evento: ActualizarEvento = ...):
+    return await crud.actualizar_evento(evento_id, evento)
+
 @router.get("/{evento_id}", response_model=Evento, status_code=status.HTTP_200_OK)
 async def obtenerEvento(evento_id: str = Path(..., description="ID del evento a obtener")):
     return await crud.obtener_evento_por_id(evento_id)
