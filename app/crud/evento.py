@@ -1,6 +1,5 @@
 from fastapi import HTTPException,status
 from beanie import PydanticObjectId
-from typing import List, Optional
 from app.models.evento import EventoModel
 from app.schemas.evento import EventoBase, CrearEvento, ActualizarEvento, Evento
 
@@ -74,6 +73,27 @@ async def obtener_evento_por_id(evento_id: PydanticObjectId) -> Evento:
         usuarios_organizadores=evento.usuarios_organizadores,
         evento_aval_url=evento.evento_aval_url
         )
+
+async def obtener_eventos() -> list[Evento]:
+    eventos = await EventoModel.find_all().to_list()
+    return [
+        Evento(
+            id=str(evento.id), 
+            nombre=evento.nombre,
+            tipo_evento=evento.tipo_evento,
+            descripcion_evento=evento.descripcion_evento,
+            fecha_evento=evento.fecha_evento,
+            hora_inicio=evento.hora_inicio,
+            hora_fin=evento.hora_fin,
+            estado_evento=evento.estado_evento,
+            organizado_por=evento.organizado_por,
+            tipo_aval=evento.tipo_aval,
+            lugares_evento=evento.lugares_evento,
+            organizaciones_externas=evento.organizaciones_externas,
+            usuarios_organizadores=evento.usuarios_organizadores,
+            evento_aval_url=evento.evento_aval_url
+            ) for evento in eventos
+    ]
 
 async def eliminar_evento(evento_id: PydanticObjectId) -> None:
     try:
