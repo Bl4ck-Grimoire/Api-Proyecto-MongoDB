@@ -13,9 +13,9 @@ class UsuarioModel(Document):
     apellido: str
     correo: str
     rol: RolUsuario
-    id_facultad: Optional[str] = None
-    id_unidad_academica: Optional[str] = None
-    id_programa_academico: Optional[str] = None
+    id_facultad: Optional[PydanticObjectId] = None
+    id_unidad_academica: Optional[PydanticObjectId] = None
+    id_programa_academico: Optional[PydanticObjectId] = None
 
     class Settings:
         name = "usuarios"

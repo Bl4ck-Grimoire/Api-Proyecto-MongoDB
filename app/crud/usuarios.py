@@ -32,9 +32,9 @@ async def actualizar_usuario(usuario_id: PydanticObjectId, usuario_actualizado: 
         apellido=usuario.apellido,
         correo=usuario.correo,
         rol=usuario.rol,
-        id_facultad=usuario.id_facultad,
-        id_unidad_academica=usuario.id_unidad_academica,
-        id_programa_academico=usuario.id_programa_academico
+        id_facultad=usuario.id_facultad or None,
+        id_unidad_academica=usuario.id_unidad_academica or None,
+        id_programa_academico=usuario.id_programa_academico or None
         )
 
 async def obtener_usuario_por_id(usuario_id: PydanticObjectId) -> Usuario:
@@ -57,9 +57,9 @@ async def obtener_usuario_por_id(usuario_id: PydanticObjectId) -> Usuario:
         apellido=usuario.apellido,
         correo=usuario.correo,
         rol=usuario.rol,
-        id_facultad=usuario.id_facultad,
-        id_unidad_academica=usuario.id_unidad_academica,
-        id_programa_academico=usuario.id_programa_academico
+        id_facultad=usuario.id_facultad or None,
+        id_unidad_academica=usuario.id_unidad_academica or None,
+        id_programa_academico=usuario.id_programa_academico or None
         )
 
 async def obtener_usuarios() -> list[Usuario]:
@@ -71,9 +71,9 @@ async def obtener_usuarios() -> list[Usuario]:
             apellido=usuario.apellido,
             correo=usuario.correo,
             rol=usuario.rol,
-            id_facultad=usuario.id_facultad,
-            id_unidad_academica=usuario.id_unidad_academica,
-            id_programa_academico=usuario.id_programa_academico
+            id_facultad=usuario.id_facultad or None,
+            id_unidad_academica=usuario.id_unidad_academica or None,
+            id_programa_academico=usuario.id_programa_academico or None
             ) 
         for usuario in usuarios
         ]

@@ -10,8 +10,8 @@ api_router_v1 = APIRouter()
 # Incluye el enrutador de pacientes bajo el prefijo /pacientes
 # Todas las rutas en paciente.router ahora comenzarán con /pacientes
 # y estarán agrupadas bajo la etiqueta "Pacientes" en la documentación.
-api_router_v1.include_router(evento.router, prefix="/eventos", tags=["eventos"])
-api_router_v1.include_router(usuarios.router, prefix="/usuarios", tags=["usuarios"])
+api_router_v1.include_router(evento.router, prefix="/eventos", tags=["Eventos"])
+api_router_v1.include_router(usuarios.router, prefix="/usuarios", tags=["Usuarios"])
 # Si en el futuro tienes un enrutador para "Doctores", lo agregarías aquí:
 # from app.api.v1.routes import doctor
 # api_router_v1.include_router(doctor.router, prefix="/doctores", tags=["Doctores"])
