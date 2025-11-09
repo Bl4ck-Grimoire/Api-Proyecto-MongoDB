@@ -80,9 +80,9 @@ async def obtener_usuarios() -> list[Usuario]:
             apellido=usuario.apellido,
             correo=usuario.correo,
             rol=usuario.rol,
-            id_facultad=usuario.id_facultad or None,
-            id_unidad_academica=usuario.id_unidad_academica or None,
-            id_programa_academico=usuario.id_programa_academico or None
+            id_facultad=str(usuario.id_facultad) if usuario.id_facultad else None,
+            id_unidad_academica=str(usuario.id_unidad_academica) if usuario.id_unidad_academica else None,
+            id_programa_academico=str(usuario.id_programa_academico) if usuario.id_programa_academico else None
             ) 
         for usuario in usuarios
         ]
