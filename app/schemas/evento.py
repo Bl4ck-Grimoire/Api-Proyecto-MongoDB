@@ -1,9 +1,11 @@
 from pydantic import BaseModel, ConfigDict, Field
 from typing import Optional, List
 from datetime import date
+from app.models.evento import OrganizadoPor
 from app.models.lugaresEvento import lugaresEvento
 from app.models.organizacionesExternas import OrganizacionExterna
 from app.models.usuariosOrganizadores import UsuarioOrganizador
+
 
 class EventoBase(BaseModel):
     model_config = ConfigDict(from_attributes=True)
@@ -15,7 +17,7 @@ class EventoBase(BaseModel):
     hora_inicio: str
     hora_fin: str
     estado_evento: str
-    organizado_por: str
+    organizado_por: OrganizadoPor
     tipo_aval: str
     lugares_evento: Optional[List[lugaresEvento]] = []
     organizaciones_externas: Optional[List[OrganizacionExterna]] = []
@@ -32,7 +34,7 @@ class CrearEvento(BaseModel):
     hora_inicio: str
     hora_fin: str
     estado_evento: str
-    organizado_por: str
+    organizado_por: OrganizadoPor
     tipo_aval: str
     lugares_evento: Optional[List[lugaresEvento]] = []
     organizaciones_externas: Optional[List[OrganizacionExterna]] = []
@@ -49,7 +51,7 @@ class ActualizarEvento(BaseModel):
     hora_inicio: Optional[str] = None
     hora_fin: Optional[str] = None
     estado_evento: Optional[str] = None
-    organizado_por: Optional[str] = None
+    organizado_por: Optional[OrganizadoPor] = None
     tipo_aval: Optional[str] = None
     lugares_evento: Optional[List[lugaresEvento]] = None
     organizaciones_externas: Optional[List[OrganizacionExterna]] = None

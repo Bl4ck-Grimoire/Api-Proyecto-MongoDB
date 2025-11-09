@@ -4,6 +4,11 @@ from app.models.usuariosOrganizadores import UsuarioOrganizador
 from beanie import Document, PydanticObjectId
 from typing import Optional, List
 from datetime import date
+from enum import Enum
+
+class OrganizadoPor(str, Enum):
+    docente = "docente"
+    estudiante = "estudiante"
 
 class EventoModel(Document):
     id: Optional[PydanticObjectId] = None
@@ -14,7 +19,7 @@ class EventoModel(Document):
     hora_inicio: str
     hora_fin: str
     estado_evento: str
-    organizado_por: str
+    organizado_por: OrganizadoPor
     tipo_aval: str
     lugares_evento: Optional[List[lugaresEvento]] = []
     organizaciones_externas: Optional[List[OrganizacionExterna]] = []
