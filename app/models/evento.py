@@ -10,17 +10,30 @@ class OrganizadoPor(str, Enum):
     docente = "docente"
     estudiante = "estudiante"
 
+class TipoEvento(str, Enum):
+    academico = "academico"
+    ludico = "ludico"
+    
+class EstadoEvento(str, Enum):
+    revision = "revision"
+    aprobado = "aprobado"
+    rechazado = "rechazado"
+
+class TipoAval(str, Enum):
+    director_docencia = "director docencia"
+    director_programa = "director programa"
+
 class EventoModel(Document):
     id: Optional[PydanticObjectId] = None
     nombre: str
-    tipo_evento: str
+    tipo_evento: TipoEvento
     descripcion_evento: str
     fecha_evento: date
     hora_inicio: str
     hora_fin: str
-    estado_evento: str
+    estado_evento: EstadoEvento
     organizado_por: OrganizadoPor
-    tipo_aval: str
+    tipo_aval: TipoAval
     lugares_evento: Optional[List[lugaresEvento]] = []
     organizaciones_externas: Optional[List[OrganizacionExterna]] = []
     usuarios_organizadores: Optional[List[UsuarioOrganizador]] = []
