@@ -5,8 +5,9 @@ from dotenv import load_dotenv
 load_dotenv()
 
 class Settings(BaseSettings):
-    MONGO_CONNECTION_STRING: str
-    MONGO_DB_NAME: str
+    MONGO_URI: str
+    #MONGO_CONNECTION_STRING: str
+    MONGO_DB: str
     
     # Configuración de la aplicación
     APP_NAME: str = Field(

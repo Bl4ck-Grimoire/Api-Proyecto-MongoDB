@@ -9,6 +9,8 @@ from app.api.v1.api import api_router_v1
 # Importa la configuración centralizada
 from app.core.config import settings
 
+app = FastAPI()
+
 #ciclo de vida de la aplicación
 @asynccontextmanager
 async def lifespan(app: FastAPI):

@@ -9,8 +9,8 @@ class DataBase:
 db = DataBase()
 
 async def connect_to_mongo():
-    db.client = AsyncIOMotorClient(settings.MONGO_CONNECTION_STRING)
-    await init_beanie(database=db.client[settings.MONGO_DB_NAME], document_models=document_models)
+    db.client = AsyncIOMotorClient(settings.MONGO_URI)
+    await init_beanie(database=db.client[settings.MONGO_DB], document_models=document_models)
 
 async def close_mongo_connection():
     db.client.close()
