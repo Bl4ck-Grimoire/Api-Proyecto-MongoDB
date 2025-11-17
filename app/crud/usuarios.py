@@ -1,7 +1,7 @@
 from fastapi import HTTPException,status
 from beanie import PydanticObjectId
 from app.models.usuarios import UsuarioModel
-from app.schemas.usuarios import UsuarioBase, CrearUsuario, ActualizarUsuario, Usuario
+from app.schemas.usuarios import CrearUsuario, ActualizarUsuario, Usuario
 
 async def crear_usuario(nuevo_usuario: CrearUsuario) -> Usuario:
     usuario = UsuarioModel(**nuevo_usuario.model_dump())

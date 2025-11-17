@@ -1,7 +1,7 @@
 from fastapi import HTTPException,status
 from beanie import PydanticObjectId
 from app.models.evento import EventoModel
-from app.schemas.evento import EventoBase, CrearEvento, ActualizarEvento, Evento
+from app.schemas.evento import ActualizarEvento, Evento
 
 async def crear_evento(nuevo_evento: EventoModel) -> Evento:
     evento = EventoModel(**nuevo_evento.model_dump())
