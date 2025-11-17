@@ -1,7 +1,6 @@
-from typing import Optional
 from pydantic import BaseModel
-from beanie import PydanticObjectId
 from enum import Enum
+from beanie import PydanticObjectId
 
 class TipoRepresentante(str, Enum):
     legal = "legal"

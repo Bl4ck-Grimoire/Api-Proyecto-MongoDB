@@ -1,6 +1,6 @@
+from enum import Enum
 from pydantic import BaseModel
 from beanie import PydanticObjectId
-from enum import Enum
 
 class TipoOrganizador(str, Enum):
     principal = "principal"

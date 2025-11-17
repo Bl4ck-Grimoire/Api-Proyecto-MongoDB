@@ -1,10 +1,11 @@
-from app.models.lugaresEvento import lugaresEvento
-from app.models.organizacionesExternas import OrganizacionExterna
-from app.models.usuariosOrganizadores import UsuarioOrganizador
 from beanie import Document, PydanticObjectId
 from typing import Optional, List
 from datetime import date
 from enum import Enum
+from app.models.lugaresEvento import lugaresEvento
+from app.models.organizacionesExternas import OrganizacionExterna
+from app.models.usuariosOrganizadores import UsuarioOrganizador
+
 
 class OrganizadoPor(str, Enum):
     docente = "docente"
