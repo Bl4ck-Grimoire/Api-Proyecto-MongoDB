@@ -11,7 +11,7 @@ from app.core.config import settings
 
 app = FastAPI()
 
-#ciclo de vida de la aplicación
+# ciclo de vida de la aplicación
 @asynccontextmanager
 async def lifespan(app: FastAPI):
      # Conexión a MongoDB (Beanie + Motor)
