@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Path, status
 from typing import List
 from app.crud import usuarios as crud
-from app.schemas.usuarios import UsuarioBase, CrearUsuario, ActualizarUsuario, Usuario
+from app.schemas.usuarios import CrearUsuario, ActualizarUsuario, Usuario
 
 router = APIRouter()
 

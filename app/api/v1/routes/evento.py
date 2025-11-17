@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Path, status
 from typing import List
 from app.crud import evento as crud
-from app.schemas.evento import EventoBase, CrearEvento, ActualizarEvento, Evento
+from app.schemas.evento import CrearEvento, ActualizarEvento, Evento
 
 router = APIRouter()
 
