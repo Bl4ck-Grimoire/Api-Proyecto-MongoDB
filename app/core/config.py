@@ -11,7 +11,7 @@ class Settings(BaseSettings):
     
     # Configuración de la aplicación
     APP_NAME: str = Field(
-        default="API del Hospital BDR", 
+        default="API para la gestión de eventos BDR", 
         description="Nombre de la aplicación"
     )
     APP_VERSION: str = Field(
