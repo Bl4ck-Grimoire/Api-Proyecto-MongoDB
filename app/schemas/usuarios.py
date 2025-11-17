@@ -1,5 +1,5 @@
-from pydantic import BaseModel, ConfigDict, Field
 from typing import Optional
+from pydantic import BaseModel, ConfigDict, Field
 from beanie import PydanticObjectId
 from app.models.usuarios import RolUsuario
 

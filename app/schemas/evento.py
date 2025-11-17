@@ -1,6 +1,6 @@
+from datetime import date
 from pydantic import BaseModel, ConfigDict, Field
 from typing import Optional, List
-from datetime import date
 from app.models.evento import OrganizadoPor, TipoEvento, EstadoEvento, TipoAval
 from app.models.lugaresEvento import lugaresEvento
 from app.models.organizacionesExternas import OrganizacionExterna
