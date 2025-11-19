@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "6914a4d4f18263d93d057ed3"
+  },
+  "nombre_organizacion": "TechCorp",
+  "nombre_representante": "María López",
+  "ubicacion_organizacion": "Cali",
+  "sector_economico": "Tecnología",
+  "actividad_organizacion": "Software",
+  "numero_telefonico": "5551111"
+},
+{
+  "_id": {
+    "$oid": "6914a4d4f18263d93d057ed4"
+  },
+  "nombre_organizacion": "BioHealth",
+  "nombre_representante": "Jorge Paz",
+  "ubicacion_organizacion": "Cali",
+  "sector_economico": "Salud",
+  "actividad_organizacion": "Biotech",
+  "numero_telefonico": "5552222"
+},
+{
+  "_id": {
+    "$oid": "6914a4d4f18263d93d057ed5"
+  },
+  "nombre_organizacion": "EcoCity",
+  "nombre_representante": "Lina Rey",
+  "ubicacion_organizacion": "Palmira",
+  "sector_economico": "Ambiente",
+  "actividad_organizacion": "Consultoría",
+  "numero_telefonico": "5553333"
+},
+{
+  "_id": {
+    "$oid": "6914a4d4f18263d93d057ed6"
+  },
+  "nombre_organizacion": "FinUp",
+  "nombre_representante": "Oscar Gil",
+  "ubicacion_organizacion": "Bogotá",
+  "sector_economico": "Finanzas",
+  "actividad_organizacion": "Fintech",
+  "numero_telefonico": "5554444"
+},
+{
+  "_id": {
+    "$oid": "6914a4d4f18263d93d057ed7"
+  },
+  "nombre_organizacion": "DataLab",
+  "nombre_representante": "Ana Ríos",
+  "ubicacion_organizacion": "Cali",
+  "sector_economico": "Educación",
+  "actividad_organizacion": "Capacitación",
+  "numero_telefonico": "5555555"
+}]

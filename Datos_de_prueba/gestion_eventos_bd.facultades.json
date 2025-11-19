@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "6914a2b8f18263d93d057eba"
+  },
+  "nombre": "Ingeniería",
+  "telefono": "3200001"
+},
+{
+  "_id": {
+    "$oid": "6914a2b8f18263d93d057ebb"
+  },
+  "nombre": "Ciencias Económicas",
+  "telefono": "3200002"
+},
+{
+  "_id": {
+    "$oid": "6914a2b8f18263d93d057ebc"
+  },
+  "nombre": "Salud",
+  "telefono": "3200003"
+},
+{
+  "_id": {
+    "$oid": "6914a2b8f18263d93d057ebd"
+  },
+  "nombre": "Artes y Humanidades",
+  "telefono": "3200004"
+},
+{
+  "_id": {
+    "$oid": "6914a2b8f18263d93d057ebe"
+  },
+  "nombre": "Ciencias Básicas",
+  "telefono": "3200005"
+}]

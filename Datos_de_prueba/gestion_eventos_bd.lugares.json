@@ -1,0 +1,40 @@
+[{
+  "_id": {
+    "$oid": "6914a4caf18263d93d057ece"
+  },
+  "nombre": "Auditorio Central",
+  "ubicacion": "Bloque A",
+  "capacidad": "300"
+},
+{
+  "_id": {
+    "$oid": "6914a4caf18263d93d057ecf"
+  },
+  "nombre": "Sala 101",
+  "ubicacion": "Bloque B",
+  "capacidad": "40"
+},
+{
+  "_id": {
+    "$oid": "6914a4caf18263d93d057ed0"
+  },
+  "nombre": "Laboratorio 3",
+  "ubicacion": "Bloque C",
+  "capacidad": "25"
+},
+{
+  "_id": {
+    "$oid": "6914a4caf18263d93d057ed1"
+  },
+  "nombre": "Cancha Norte",
+  "ubicacion": "Campus Deportivo",
+  "capacidad": "100"
+},
+{
+  "_id": {
+    "$oid": "6914a4caf18263d93d057ed2"
+  },
+  "nombre": "Sala Innovación",
+  "ubicacion": "Bloque D",
+  "capacidad": "50"
+}]

@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "6914a427f18263d93d057ebf"
+  },
+  "nombre": "Departamento de ingenieria en sistemas",
+  "facultad_pertenece": {
+    "id_facultad": {
+      "$oid": "6914a2b8f18263d93d057eba"
+    },
+    "nombre": "Ingeniería"
+  }
+},
+{
+  "_id": {
+    "$oid": "6914a427f18263d93d057ec0"
+  },
+  "nombre": "Departamento de economia",
+  "facultad_pertenece": {
+    "id_facultad": {
+      "$oid": "6914a2b8f18263d93d057ebb"
+    },
+    "nombre": "Ciencias Económicas"
+  }
+},
+{
+  "_id": {
+    "$oid": "6914a427f18263d93d057ec1"
+  },
+  "nombre": "Departamento de enfermeria",
+  "facultad_pertenece": {
+    "id_facultad": {
+      "$oid": "6914a2b8f18263d93d057ebc"
+    },
+    "nombre": "Salud"
+  }
+},
+{
+  "_id": {
+    "$oid": "6914a427f18263d93d057ec2"
+  },
+  "nombre": "Departamento de humanidades",
+  "facultad_pertenece": {
+    "id_facultad": {
+      "$oid": "6914a2b8f18263d93d057ebd"
+    },
+    "nombre": "Artes y Humanidades"
+  }
+},
+{
+  "_id": {
+    "$oid": "6914a427f18263d93d057ec3"
+  },
+  "nombre": "Departamento de matematicas",
+  "facultad_pertenece": {
+    "id_facultad": {
+      "$oid": "6914a2b8f18263d93d057ebe"
+    },
+    "nombre": "Ciencias Básicas"
+  }
+}]

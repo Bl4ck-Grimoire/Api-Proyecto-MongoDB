@@ -1,0 +1,85 @@
+[{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f23"
+  },
+  "id_usuario": {
+    "$oid": "6914b1d2f18263d93d057f1e"
+  },
+  "contraseña": [
+    {
+      "clave": "hash1",
+      "fecha_creacion": {
+        "$date": "2025-01-01T00:00:00.000Z"
+      },
+      "vigente": "si"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f24"
+  },
+  "id_usuario": {
+    "$oid": "6914b1d2f18263d93d057f1f"
+  },
+  "contraseña": [
+    {
+      "clave": "hash2",
+      "fecha_creacion": {
+        "$date": "2025-01-05T00:00:00.000Z"
+      },
+      "vigente": "si"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f25"
+  },
+  "id_usuario": {
+    "$oid": "6914b1d2f18263d93d057f20"
+  },
+  "contraseña": [
+    {
+      "clave": "hash3",
+      "fecha_creacion": {
+        "$date": "2024-12-20T00:00:00.000Z"
+      },
+      "vigente": "no"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f26"
+  },
+  "id_usuario": {
+    "$oid": "6914b1d2f18263d93d057f21"
+  },
+  "contraseña": [
+    {
+      "clave": "hash4",
+      "fecha_creacion": {
+        "$date": "2025-02-10T00:00:00.000Z"
+      },
+      "vigente": "si"
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f27"
+  },
+  "id_usuario": {
+    "$oid": "6914b1d2f18263d93d057f22"
+  },
+  "contraseña": [
+    {
+      "clave": "hash5",
+      "fecha_creacion": {
+        "$date": "2025-03-01T00:00:00.000Z"
+      },
+      "vigente": "si"
+    }
+  ]
+}]

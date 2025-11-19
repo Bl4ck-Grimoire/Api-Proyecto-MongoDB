@@ -1,0 +1,42 @@
+[
+  {
+    "_id": { "$oid": "6914b1d2f18263d93d057f1e" },
+    "nombre": "Laura",
+    "apellido": "Mendoza",
+    "correo": "laura@uao.edu",
+    "rol": "docente",
+    "id_unidad_academica": { "$oid": "6914a427f18263d93d057ebf" }
+  },
+  {
+    "_id": { "$oid": "6914b1d2f18263d93d057f1f" },
+    "nombre": "Pablo",
+    "apellido": "Pérez",
+    "correo": "pablo@uao.edu",
+    "rol": "estudiante",
+    "id_programa_academico": { "$oid": "6914a4bef18263d93d057eca" }
+  },
+  {
+    "_id": { "$oid": "6914b1d2f18263d93d057f20" },
+    "nombre": "Ana",
+    "apellido": "Gómez",
+    "correo": "ana@uao.edu",
+    "rol": "estudiante",
+    "id_programa_academico": { "$oid": "6914a4bef18263d93d057ecb" }
+  },
+  {
+    "_id": { "$oid": "6914b1d2f18263d93d057f21" },
+    "nombre": "Carlos",
+    "apellido": "Díaz",
+    "correo": "carlos@uao.edu",
+    "rol": "docente",
+    "id_unidad_academica": { "$oid": "6914a427f18263d93d057ec2" }
+  },
+  {
+    "_id": { "$oid": "6914b1d2f18263d93d057f22" },
+    "nombre": "Sonia",
+    "apellido": "Rojas",
+    "correo": "sonia@uao.edu",
+    "rol": "secretario academico",
+    "id_facultad": { "$oid": "6914a2b8f18263d93d057eba" }
+  }
+]

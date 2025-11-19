@@ -1,0 +1,100 @@
+[{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f2d"
+  },
+  "justificacion": "Cumple requisitos",
+  "acta_url": "https://drive/acta1.pdf",
+  "fecha_evaluacion": {
+    "$date": "2025-03-12T00:00:00.000Z"
+  },
+  "estado": "aprobado",
+  "usuario_evaluador": {
+    "id_usuario": {
+      "$oid": "6914b1d2f18263d93d057f22"
+    },
+    "nombre_usuario": "Sonia"
+  },
+  "id_evento_evaluado": {
+    "$oid": "6914b1d2f18263d93d057f28"
+  }
+},
+{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f2e"
+  },
+  "justificacion": "Pendiente aval",
+  "acta_url": "https://drive/acta2.pdf",
+  "fecha_evaluacion": {
+    "$date": "2025-04-07T00:00:00.000Z"
+  },
+  "estado": "aprobado",
+  "usuario_evaluador": {
+    "id_usuario": {
+      "$oid": "6914b1d2f18263d93d057f22"
+    },
+    "nombre_usuario": "Sonia"
+  },
+  "id_evento_evaluado": {
+    "$oid": "6914b1d2f18263d93d057f29"
+  }
+},
+{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f2f"
+  },
+  "justificacion": "Incompleto",
+  "acta_url": "https://drive/acta3.pdf",
+  "fecha_evaluacion": {
+    "$date": "2025-05-22T00:00:00.000Z"
+  },
+  "estado": "rechazado",
+  "usuario_evaluador": {
+    "id_usuario": {
+      "$oid": "6914b1d2f18263d93d057f22"
+    },
+    "nombre_usuario": "Sonia"
+  },
+  "id_evento_evaluado": {
+    "$oid": "6914b1d2f18263d93d057f2a"
+  }
+},
+{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f30"
+  },
+  "justificacion": "Ok seguridad",
+  "acta_url": "https://drive/acta4.pdf",
+  "fecha_evaluacion": {
+    "$date": "2025-02-16T00:00:00.000Z"
+  },
+  "estado": "aprobado",
+  "usuario_evaluador": {
+    "id_usuario": {
+      "$oid": "6914b1d2f18263d93d057f22"
+    },
+    "nombre_usuario": "Sonia"
+  },
+  "id_evento_evaluado": {
+    "$oid": "6914b1d2f18263d93d057f2b"
+  }
+},
+{
+  "_id": {
+    "$oid": "6914b1d2f18263d93d057f31"
+  },
+  "justificacion": "Falta logística",
+  "acta_url": "https://drive/acta5.pdf",
+  "fecha_evaluacion": {
+    "$date": "2025-06-14T00:00:00.000Z"
+  },
+  "estado": "rechazado",
+  "usuario_evaluador": {
+    "id_usuario": {
+      "$oid": "6914b1d2f18263d93d057f22"
+    },
+    "nombre_usuario": "Sonia"
+  },
+  "id_evento_evaluado": {
+    "$oid": "6914b1d2f18263d93d057f2c"
+  }
+}]
