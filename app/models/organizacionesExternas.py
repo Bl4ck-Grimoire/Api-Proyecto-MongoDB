@@ -1,5 +1,5 @@
-from pydantic import BaseModel
 from enum import Enum
+from pydantic import BaseModel
 from beanie import PydanticObjectId
 
 class TipoRepresentante(str, Enum):

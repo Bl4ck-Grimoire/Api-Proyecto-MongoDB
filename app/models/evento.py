@@ -6,7 +6,6 @@ from app.models.lugaresEvento import lugaresEvento
 from app.models.organizacionesExternas import OrganizacionExterna
 from app.models.usuariosOrganizadores import UsuarioOrganizador
 
-
 class OrganizadoPor(str, Enum):
     docente = "docente"
     estudiante = "estudiante"

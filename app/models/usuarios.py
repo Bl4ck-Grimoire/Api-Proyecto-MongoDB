@@ -1,6 +1,6 @@
-from enum import Enum
 from beanie import Document, PydanticObjectId
 from typing import Optional
+from enum import Enum
 
 class RolUsuario(str, Enum):
     estudiante = "estudiante"
